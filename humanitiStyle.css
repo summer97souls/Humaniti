@@ -130,6 +130,7 @@
     justify-content: center;
     align-items: center;
     margin: 40px 0;
+    scroll-behavior: smooth;
 }
 
 .con .card{
@@ -345,4 +346,115 @@
 
 .footcontact ul li span{
     margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Logo {
+        font-size: 1.5em;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation a {
+        margin: 5px 0;
+    }
+
+    .Main_Logo #TA {
+        font-size: 3em;
+    }
+
+    .Para {
+        padding: 50px;
+    }
+
+    .Para h2 {
+        font-size: 2em;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .wrapper .TL h4 {
+        font-size: 30px;
+    }
+
+    .card {
+        width: 250px;
+        height: 250px;
+        margin: 10px;
+    }
+
+    .footer {
+        padding: 30px 0;
+    }
+
+    .foot-info {
+        flex-direction: column;
+    }
+
+    .foot-info .footlogo,
+    .footlink {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .footlink {
+        margin-top: 20px;
+    }
+
+    .Socials ul {
+        flex-direction: column;
+    }
+
+    .Socials ul li a {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 20px;
+    }
+
+    .Logo {
+        font-size: 1.8em;
+    }
+
+    .navigation a {
+        padding: 4px 10px;
+        font-size: 14px;
+    }
+
+    .Main_Logo #TA {
+        font-size: 4em;
+    }
+
+    .Para {
+        padding: 80px;
+    }
+
+    .Para h2 {
+        font-size: 2.5em;
+    }
+
+    .wrapper .TL h4 {
+        font-size: 40px;
+    }
+
+    .card {
+        width: 280px;
+        height: 280px;
+    }
 }
