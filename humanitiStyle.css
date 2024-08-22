@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    Font-family: 'Poppins';
+ }
+
+ body {
+    background: beige;
+    height: 100%;
+    overflow-x: hidden;
+ }
+
+ header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+ } 
+
+ .Logo {
+    font-size: 2em;
+    color: black;
+    pointer-events: none;
+ }
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.act{
+    background:black ;
+    color: #f4f1eb;
+}
+
+.Main_Logo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.secondary{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -250px;
+}
+
+#second {
+    position:relative;
+    color: black;
+}
+
+#TA {
+    position: absolute;
+    font-size: 5em;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.Para {
+    position: relative;
+    background-color: bisque;
+    padding: 100px;
+}
+
+.Para h2 {
+    position: relative;
+    font-size: 3em;
+}
+
+.bajji{
+    text-decoration: none;
+    color: black;
+    padding: 8px 20px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 1000;
+    font-size: medium;
+}
+
+.bajji:hover{
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: blanchedalmond;
+}
+
+ .wrapper .TL {
+    text-align: center;
+}
+
+.TL h4 {
+    display: inline-block;
+    padding: 20px;
+    color: black;
+    font-size: 50px;
+    font-weight: 1000;
+    letter-spacing: 1.2px;
+    word-spacing: 1px solid rgba(255,255,255,0.1);
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+.wrapper .con {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.con .card{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
+                inset 0 0 0 1000px rgba(6, 52, 109, 0.6);
+    border-radius: 15px ;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .mode, .mode img{
+    width: 100%;
+    height: 100%;
+}
+
+.card .content{
+    position: absolute;
+    bottom: -160px;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 15px;
+    transition: bottom 0.5s;
+    transition-delay: 0.65s;
+    overflow: hidden;
+}
+
+.card:hover .content{
+    bottom: 0;
+    transition-delay: 0s;
+}
+
+.content .contentbox h3 {
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 15px;
+    line-height: 1.1em;
+    transition: 0.5s;
+    transition-delay: 0.65s;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.card:hover .content .contentbox h3 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.content .contentbox h3 span {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.content .fi {
+    position: relative;
+    bottom: 10px;
+    display: flex;
+}
+
+.content .fi li {
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.2 * var(--i));
+}
+
+.card:hover .content .fi li {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.content .fi li a {
+    color: black;
+    font-size: 24px;
+}
+
+.card {
+    min-width: 300px; 
+    margin: 0 10px;
+    flex-shrink: 0; 
+    overflow: hidden;
+    box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 1),
+                inset 0 0 0 1000px rgba(6, 52, 109, 0.6);
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+ .skroll{
+    color: black;
+    background-color: blanchedalmond;
+    outline: none;
+    border: none;
+    cursor: pointer;
+} 
+
+.wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.scroll-image::-webkit-scrollbar {
+    display: none; 
+}
+.scroll-image {
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow-x: auto;  
+    scroll-behavior: smooth;
+    width: 100%; 
+    max-width: 80vw; 
+    padding: 10px; 
+}
+
+.footer ul li{
+    list-style-type: none;
+}
+
+.footer{
+    background-color: wheat;
+    color: black;
+}
+
+.foot-info{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    padding: 50px 0;
+}
+
+.foot-info .footlogo{
+    padding: 0 15px;
+    width: 70%;
+}
+
+.foot-info h2{
+    margin-bottom: 20px;
+}
+
+
+.footlink{
+    width: 20%;
+    padding-left: 30px;
+}
+
+.Socials{
+    margin-top: 30px;
+}
+
+.Socials ul{
+    display: flex;
+}
+
+.Socials ul li a {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: -20px;
+    width: 50px;
+    height: 50px;
+    padding-top: 12px;
+    background-color: transparent;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.Socials ul li a{
+    color: black;
+}
+
+.Socials ul li a:hover{
+    color: white;
+}
+
+
+.footlink ul li{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.footlink ul li a:hover{
+    color: white;
+}
+
+.footlink ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.footcontact{
+    align-items: center;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+.footcontact ul li span{
+    margin-right: 15px;
+}
