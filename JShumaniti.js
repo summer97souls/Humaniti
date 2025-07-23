@@ -1,5 +1,6 @@
 let TA = document.getElementById('TA');
 let second = document.getElementById('second');
+let left = document.getElementById('left')
 
 window.addEventListener('scroll', () => {
     let value = window.scrollY;
@@ -46,7 +47,6 @@ window.addEventListener('scroll', () => {
     let secondaryValue = TAValue;
 
 })
-
 
 document.addEventListener('DOMContentLoaded', () => {
     const Right = document.querySelector('.Right');

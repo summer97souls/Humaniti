@@ -55,8 +55,6 @@
     transform: translateY(10px); 
     transition: opacity 1s ease-out, transform 1s ease-out; 
  }
- 
-
 
 .navigation a {
     text-decoration: none;
